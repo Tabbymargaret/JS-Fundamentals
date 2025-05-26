@@ -1,12 +1,8 @@
 function display(noOfTimes)
 {
-    let i=0;
-    do
-    {
-        console.log(`${i + 1} C is fun`);
-        i++;
+    for(let i = 0; i < noOfTimes; i++) {
+        console.log("C is fun");
     }
-    while(i < noOfTimes);
 };
 let number;
 number = parseInt(prompt("Enter number of times to display C is fun:"));
