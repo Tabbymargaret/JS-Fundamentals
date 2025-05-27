@@ -1,14 +1,14 @@
-function display(noOfTimes)
 {
-    for(let i = 0; i < noOfTimes; i++) {
-        console.log("C is fun");
+    times = parseInt(noOfTimes);
+    if(isNaN(times) || times < 0) {
+        console.log("Missing number of occurrences");
     }
-};
-let number;
-number = parseInt(prompt("Enter number of times to display C is fun:"));
-if (isNaN(number) || number < 0) {
-    console.log("Missing number of occurrences");
+    else
+    {
+        for(let i=0; i<times; i++) {  
+            console.log(`${i + 1} C is fun`);
+        }
+    }
 }
-else{
-    display(number);
-}
+
+display(3);
