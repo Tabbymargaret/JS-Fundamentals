@@ -11,4 +11,6 @@
     }
 }
 
+display(6);
+display(1);
 display(3);
